@@ -112,11 +112,6 @@ class AdminController extends BaseController
             'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
             'role' => $this->request->getVar('role'),
         ];
-        // if ($this->request->getFile('profile_image')->isValid()) {
-        //     $profileImage = $this->request->getFile('profile_image');
-        //     $profileImage->move(WRITEPATH . 'uploads');
-        //     $data['profile_image'] = $profileImage->getName();
-        // }
 
         if ($this->request->getFile('profile_image')->isValid()) {
         

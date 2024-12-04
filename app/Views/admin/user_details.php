@@ -20,8 +20,8 @@
             <h2>Education</h2>
         </div>
         <div class="card-body">
-            <p><strong>Degree:</strong><?=$userEducation['degree'] ?? '' ?></p>
-            <p><strong>Institute:</strong><?=$userEducation['institute'] ?? ''?></p>
+            <p><strong>Degree:</strong> <?=$userEducation['degree'] ?? '' ?></p>
+            <p><strong>Institute:</strong> <?=$userEducation['institute'] ?? ''?></p>
         </div>
     </div>
 
@@ -30,8 +30,8 @@
             <h2>Employment</h2>
         </div>
         <div class="card-body">
-            <p><strong>Designation:</strong><?=$userEmployment['designation'] ?? '' ?></p>
-            <p><strong>Experience:</strong><?=$userEmployment['experience'] ?? '' ?></p>
+            <p><strong>Designation:</strong> <?=$userEmployment['designation'] ?? '' ?></p>
+            <p><strong>Experience:</strong> <?=$userEmployment['experience'] ?? '' ?></p>
         </div>
     </div>
 </div>
