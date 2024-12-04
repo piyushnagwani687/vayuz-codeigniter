@@ -6,11 +6,10 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('api/test', function () {
-    return 'Test route working!';
+$routes->get('/', function () {
+    return redirect()->to(base_url('/api/auth/login'));
 });
 
-// $routes->get('/', 'Home::index');
 $routes->group('api', function ($routes) {
     $routes->get('auth/login', 'AuthController::loginView');
     $routes->post('auth/login', 'AuthController::login');
