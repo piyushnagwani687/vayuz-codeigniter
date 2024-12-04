@@ -28,7 +28,7 @@
             </div>
             <div class="mb-3 col-md-6">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" name="password" class="form-control" required>
+                <input type="password" name="password" class="form-control">
             </div>
             <div class="mb-3 col-md-6">
                 <label for="role" class="form-label">Role</label>

@@ -109,9 +109,13 @@ class AdminController extends BaseController
             'first_name' => $this->request->getVar('first_name'),
             'last_name' => $this->request->getVar('last_name'),
             'email' => $this->request->getVar('email'),
-            'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
             'role' => $this->request->getVar('role'),
         ];
+
+        if($this->request->getVar('password') != null)
+        {
+            $data['password'] = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
+        }
 
         if ($this->request->getFile('profile_image')->isValid()) {
         
