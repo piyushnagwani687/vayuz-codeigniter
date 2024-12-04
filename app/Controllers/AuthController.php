@@ -57,14 +57,8 @@ class AuthController extends BaseController
                 'role' => $this->request->getPost('role'),
             ];
 
-            if ($this->request->getFile('profile_image')->isValid()) {
-                $profileImage = $this->request->getFile('profile_image');
-                $profileImage->move(WRITEPATH . 'uploads');
-                $data['profile_image'] = $profileImage->getName();
-            }
-
             $User->save($data);
-            return redirect()->to('api/auth/login')->with('success', 'Registration successful, please login.');
+            return redirect()->to(base_url('api/auth/login'))->with('success', 'Registration successful, please login.');
     }
 
     public function logout()

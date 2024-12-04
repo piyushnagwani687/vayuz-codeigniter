@@ -33,10 +33,6 @@
                 <option value="customer">Customer</option>
             </select>
         </div>
-        <div class="mb-3">
-            <label for="profile_image" class="form-label">Profile Image</label>
-            <input type="file" name="profile_image" class="form-control" accept="image/*">
-        </div>
         <button type="submit" class="btn btn-primary">Register</button>
     </form>
 </div>
